@@ -4,7 +4,7 @@ dhatu/_transliterate.py
 Internal module for converting between Harvard-Kyoto (HK) and SLP1
 transliteration schemes. 
 
-As per Specification v1.1 (§3), the library uses SLP1 internally for 
+As per Specification  (§3), the library uses SLP1 internally for 
 computation and lookup tables, but the public API strictly speaks HK.
 """
 
@@ -102,3 +102,7 @@ def slp1_to_hk(text: str) -> str:
     if not text:
         return ""
     return text.translate(_SLP1_TO_HK_TRANS)
+
+# ADD THESE TWO LINES AT THE END:
+slp_to_hk = slp1_to_hk
+hk_to_slp = hk_to_slp1

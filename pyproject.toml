@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skt-dhatu-parser"
-version = "1.1.0"
+version = "1.0.0"
 description = "Sanskrit Verb Conjugation and Dhatu Analysis"
 dependencies = [
     "msgpack>=1.0.0"
 ]
 
-[project.optional-dependencies]
-dev = ["pytest", "numpy"]
+[project.scripts]
+dhatu-parser = "dhatu.__main__:main"

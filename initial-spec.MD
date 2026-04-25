@@ -1,5 +1,5 @@
 # `skt-dhatu-parser` — Sanskrit Verb Conjugation Python Package
-## Specification v1.1
+## Specification 
 
 ---
 
